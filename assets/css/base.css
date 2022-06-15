@@ -1,0 +1,76 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333; 
+    --primary-color: #ee4d2d;
+    --border-color: #dbdbdb;
+    
+    --header-height: 120px;
+    --navbar-height: 34px;
+    --header__search-height: calc(var(--header-height) - var(var(--navbar-height)));
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    /* HACK: để 62.5% = > 1rem = 10px */
+    font-size: 62.5%;
+    line-height: 1.6 rem; /*chiều cao chữ*/
+    font-family: 'Roboto', sans-serif; /*sans-serif: chủng chữ k có chân, nếu k tải đc Roboto thì dùng cái sau*/
+    box-sizing: border-box;
+}
+
+.arrow::before {
+    content: "";
+    border: 20px solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 20px;
+    top: -25px;
+}
+
+/*Responsive*/
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.grid__column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+
+.grid__column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3333%;
+}
+
+.grid__column-5 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+.header__logo {
+    width: 200px;
+
+}
+
+.header__logo-img {
+    width: 150px;
+}
+
+.header__logo-link {
+    color: transparent;
+    text-decoration: none;
+}
